@@ -3,8 +3,8 @@ set -eu
 key=id_rsa.pub
 
 if [ ! -e ~/.ssh ]; then
-mkdir .ssh
-chmod 700 .ssh
+mkdir ~/.ssh
+chmod 700 ~/.ssh
 fi
 
 if [ -e ./id_rsa.pub ]; then
