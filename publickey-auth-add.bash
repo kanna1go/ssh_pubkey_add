@@ -7,9 +7,9 @@ mkdir ~/.ssh
 chmod 700 ~/.ssh
 fi
 
-if [ -e ./id_rsa.pub ]; then
+if [ -e ./"$key" ]; then
 mv $key ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 else
-echo "id_rsa.pub not found."
+echo "$key not found."
 fi
